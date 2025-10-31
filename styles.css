@@ -435,6 +435,12 @@ footer {
         grid-template-columns: 1fr;
     }
 
+    .products{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
     .location-map {
         height: 300px;
     }
