@@ -13,6 +13,8 @@
 
     <title>Warmbaths Mini Market - Your Local Stop for Fresh Produce</title>
 
+    <link rel="icon" type="image/png" href="images/favicon.jpg">
+
     <!--Stylesheet link-->
     <link href="styles.css" rel="stylesheet">
 </head>
@@ -206,14 +208,14 @@
             const result = await response.json();
 
             if (result.success) {
-                document.getElementById("form-status").textContent = "✅ Message sent successfully!";
+                document.getElementById("form-status").textContent = "Message sent successfully!";
                 form.reset();
             } else {
-                document.getElementById("form-status").textContent = "⚠️ Failed to send message.";
+                document.getElementById("form-status").textContent = "Failed to send message.";
             }
 
             } catch (error) {
-                document.getElementById("form-status").textContent = "❌ Something went wrong. Please try again.";
+                document.getElementById("form-status").textContent = "Something went wrong. Please try again.";
             }
         });
 
