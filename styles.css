@@ -8,6 +8,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: #333;
+    font-size: 1.3rem;
 }
 
 /* Navigation */
@@ -200,7 +201,7 @@ nav a:hover {
 .product-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(230px, 3rem));
-    gap: 3rem;
+    gap: 5rem;
     max-width: 1200px;
     margin: 0 auto;
     justify-content: center;
@@ -208,13 +209,22 @@ nav a:hover {
 
 .product-card {
     background: white;
-    padding: 2.5rem;
+    padding: 20px;
     border-radius: 10px;
     text-align: center;
     box-shadow: 0 3px 10px rgba(0,0,0,0.1);
     transition: transform 0.3s;
-    width: 250px;
-    height: 250px;
+    width: 270px;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-card h3{
+    font-size: 22px;
+    margin: 0;
 }
 
 .product-card:hover {
@@ -224,6 +234,10 @@ nav a:hover {
 .product-icon {
     font-size: 3rem;
     margin-bottom: 0.5rem;
+}
+
+.product-icon img{
+    height: 100px;
 }
 
 .product-card h3 {
